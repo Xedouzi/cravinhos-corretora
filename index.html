@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="only light">
+<meta name="theme-color" content="#12392D">
+<title>Cravinhos Corretora de Seguros | Cravinhos, SP</title>
+<meta name="description" content="Corretora de seguros em Cravinhos desde 2003: automóvel, moto, residencial, vida e empresarial. Av. Cel. José Nogueira Terra, 30, sala 2, Centro. (16) 3951-7090.">
+<!-- DEMO: remover a linha abaixo quando publicar no dominio definitivo do cliente (cravinhoscorretora.com.br) -->
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2032%2032%27%3E%3Crect%20width%3D%2732%27%20height%3D%2732%27%20rx%3D%277%27%20fill%3D%27%2312392D%27%2F%3E%3Ccircle%20cx%3D%2716%27%20cy%3D%2716%27%20r%3D%279%27%20fill%3D%27none%27%20stroke%3D%27%23A9D8C1%27%20stroke-width%3D%271.6%27%2F%3E%3Ccircle%20cx%3D%2716%27%20cy%3D%2716%27%20r%3D%275%27%20fill%3D%27none%27%20stroke%3D%27%23A9D8C1%27%20stroke-width%3D%271.6%27%2F%3E%3C%2Fsvg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Petrona:wght@500..800&family=Public+Sans:wght@400..700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "InsuranceAgency",
+  "name": "Cravinhos Corretora de Seguros",
+  "legalName": "Cravinhos Corretora de Seguros Ltda",
+  "foundingDate": "2003-07-18",
+  "telephone": "+55-16-3951-7090",
+  "email": "cravinhos.seguros@metalnet.com.br",
+  "address": { "@type": "PostalAddress", "streetAddress": "Av. Cel. José Nogueira Terra, 30, sala 2 - Centro", "addressLocality": "Cravinhos", "addressRegion": "SP", "postalCode": "14140-000", "addressCountry": "BR" },
+  "geo": { "@type": "GeoCoordinates", "latitude": -21.3379921, "longitude": -47.7300016 },
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.7", "reviewCount": "18" }
+}
+</script>
+<style>
+  /* ============================================================
+     IDENTIDADE - a corretora nao tem logo nem foto online.
+     O tema vem do papel da apolice: o GUILHOCHE (as linhas
+     entrelacadas das estampas de seguranca de apolice e cheque),
+     em verde-tinta. Papel frio + cartoes brancos, raio unico.
+     ============================================================ */
+  :root {
+    color-scheme: only light;
+    --branco:   #FFFFFF;
+    --papel:    #F1F5F2;   /* off-white frio, levemente verde */
+    --nevoa:    #E3EEE8;
+    --linha:    #D6E2DB;
+    --linha-forte: #7D9389;/* contorno de controle: 3:1 no branco */
+    --tinta:    #18231E;   /* texto: 16:1 no branco */
+    --tinta-2:  #4D5E56;   /* texto de apoio: 6.9:1 no branco, 6.2:1 no papel */
+    --verde:    #12392D;   /* verde-tinta: botoes e faixas (12.6:1 com branco) */
+    --verde-2:  #1C5240;   /* hover */
+    --verde-linha: #3E8466;/* linhas do guilhoche e desenhos */
+    --verde-claro: #A9D8C1;/* guilhoche sobre o verde-tinta */
+    --raio:     12px;
+
+    --fonte: "Public Sans", "Public Sans reserva", Arial, sans-serif;
+    --fonte-titulo: "Petrona", "Petrona reserva", Georgia, serif;
+    --largura: 1200px;
+    --margem: clamp(16px, 4vw, 40px);
+  }
+  @font-face { font-family: "Public Sans reserva"; src: local("Arial"); size-adjust: 104%; }
+  @font-face { font-family: "Petrona reserva"; src: local("Georgia Bold"), local("Georgia"); size-adjust: 96%; }
+
+  /* ---------- base ---------- */
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { margin: 0; background: var(--papel); color: var(--tinta); font: 400 1.0625rem/1.65 var(--fonte); -webkit-tap-highlight-color: transparent; }
+  img, svg { max-width: 100%; }
+  figure, blockquote { margin: 0; }
+  a { color: var(--verde); text-underline-offset: .18em; }
+  a, button, input, select, label { touch-action: manipulation; }
+  :focus-visible { outline: 3px solid var(--verde-linha); outline-offset: 3px; }
+  h1, h2, h3 { font-family: var(--fonte-titulo); font-weight: 650; line-height: 1.1; margin: 0; letter-spacing: -.012em; text-wrap: balance; overflow-wrap: break-word; color: var(--verde); }
+  h2 { font-size: clamp(1.95rem, 1.4rem + 2.1vw, 2.9rem); }
+  h3 { font-size: 1.32rem; }
+  p { margin: 0; }
+  p, li, label, dd, dt, small, legend, figcaption, .btn { overflow-wrap: anywhere; }
+  .envoltorio { max-width: var(--largura); margin-inline: auto; padding-inline: var(--margem); }
+  .so-leitor { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .pular { position: absolute; left: 1rem; top: -5rem; z-index: 50; padding: .8rem 1rem; background: var(--branco); color: var(--tinta); }
+  .pular:focus { top: 1rem; }
+
+  /* botoes */
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: .55rem; max-width: 100%;
+    min-height: 52px; padding: .75rem 1.35rem; border: 0; border-radius: 10px;
+    background: var(--verde); color: #fff; font: 600 1rem/1.2 var(--fonte); text-decoration: none; text-align: center; cursor: pointer;
+    transition: background-color .2s, box-shadow .2s, transform .2s;
+  }
+  .btn:hover { background: var(--verde-2); }
+  .btn:active { transform: translateY(1px); }
+  .btn svg { width: 1.25em; height: 1.25em; flex: none; }
+  .btn-claro { background: #fff; color: var(--verde); }
+  .btn-claro:hover { background: var(--nevoa); }
+  .btn-vidro { background: rgba(255, 255, 255, .06); color: #fff; box-shadow: inset 0 0 0 1.5px rgba(255, 255, 255, .7); }
+  .btn-vidro:hover { background: rgba(255, 255, 255, .14); }
+  .btn-linha { background: var(--branco); color: var(--verde); box-shadow: inset 0 0 0 1.5px var(--linha-forte); }
+  .btn-linha:hover { box-shadow: inset 0 0 0 1.5px var(--verde); background: var(--papel); }
+  @media (prefers-reduced-motion: reduce) { .btn { transition: none; } .btn:active { transform: none; } }
+
+  /* ---------- topo ---------- */
+  .topo { position: relative; z-index: 20; background: var(--branco); border-bottom: 1px solid var(--linha); }
+  .topo-grade { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .75rem 1.5rem; padding-block: .85rem; }
+  .marca { display: inline-flex; align-items: center; gap: .7rem; min-width: 0; min-height: 44px; text-decoration: none; color: var(--verde); }
+  .marca-selo { width: 44px; height: 44px; flex: none; }
+  .marca-nome { display: grid; line-height: 1.05; font-family: var(--fonte-titulo); }
+  .marca-nome strong { font-size: 1.32rem; font-weight: 700; letter-spacing: -.01em; }
+  .marca-nome span { font-size: .95rem; font-weight: 500; color: var(--tinta-2); }
+  .menu { display: flex; flex-wrap: wrap; gap: .25rem 1.6rem; align-items: center; }
+  .menu a { color: var(--tinta); text-decoration: none; padding: .55rem 0; font-weight: 500; font-size: .98rem; }
+  .menu a:hover { color: var(--verde); text-decoration: underline; }
+  .menu .menu-tel { color: var(--verde); font-weight: 700; }
+  /* botao do menu (so no celular): 3 barrinhas retas no verde-tinta; viram X ao abrir */
+  .menu-botao { display: none; }
+  @media (max-width: 960px) {
+    .topo-grade { flex-wrap: nowrap; }
+    .menu-botao {
+      display: grid; align-content: center; justify-items: center; gap: 5px; flex: none; width: 52px; height: 52px; margin-right: -8px; padding: 0;
+      border: 0; border-radius: var(--raio); background: none; cursor: pointer;
+    }
+    .menu-botao span { display: block; width: 28px; height: 4px; border-radius: 4px; background: var(--verde); transition: transform .25s cubic-bezier(.2, .7, .2, 1), opacity .2s; }
+    .menu-aberto .menu-botao span:nth-child(1) { transform: translateY(9px) rotate(45deg); }
+    .menu-aberto .menu-botao span:nth-child(2) { opacity: 0; }
+    .menu-aberto .menu-botao span:nth-child(3) { transform: translateY(-9px) rotate(-45deg); }
+    .menu {
+      display: none; position: absolute; top: 100%; left: 0; right: 0;
+      grid-template-columns: minmax(0, 1fr); gap: 0; padding: .5rem var(--margem) 1.25rem;
+      background: var(--branco); border-bottom: 1px solid var(--linha); box-shadow: 0 18px 30px -22px rgba(18, 57, 45, .55);
+    }
+    .menu-aberto .menu { display: grid; animation: menu-desce .22s ease-out; }
+    .menu a { display: flex; align-items: center; min-height: 52px; padding: 0; border-bottom: 1px solid var(--linha); font-size: 1.05rem; }
+    .menu a:last-child { border-bottom: 0; }
+  }
+  @keyframes menu-desce { from { opacity: 0; transform: translateY(-6px); } }
+  @media (prefers-reduced-motion: reduce) { .menu-botao span { transition: none; } .menu-aberto .menu { animation: none; } }
+
+  /* ---------- abertura: verde-tinta com a roseta de guilhoche ---------- */
+  .abertura { position: relative; overflow: hidden; background: var(--verde); color: #fff; isolation: isolate; }
+  .guilhoche { position: absolute; inset: 0; z-index: -1; width: 100%; height: 100%; pointer-events: none; }
+  .guilhoche path { fill: none; stroke: var(--verde-claro); stroke-width: .9; }
+  .abertura-conteudo { display: grid; grid-template-columns: minmax(0, 1fr); align-content: center; justify-items: start; gap: 1.4rem; min-height: clamp(520px, calc(100svh - 10rem), 760px); padding-block: clamp(3.5rem, 9vh, 6.5rem); }
+  .abertura h1 { max-width: 13em; color: #fff; font-size: clamp(2.1rem, 1.3rem + 4.4vw, 4.6rem); font-weight: 650; line-height: 1.02; letter-spacing: -.02em; }
+  .abertura-texto { max-width: 34rem; font-size: clamp(1.08rem, 1rem + .35vw, 1.25rem); color: #E4F2EB; }
+  .abertura-acoes { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: .4rem; }
+  /* degrade atras do texto: as linhas da roseta nao atrapalham a leitura */
+  .abertura::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, var(--verde) 0%, rgba(18, 57, 45, .92) 38%, rgba(18, 57, 45, 0) 70%); }
+  @media (max-width: 760px) {
+    .abertura::before { background: linear-gradient(180deg, rgba(18, 57, 45, .1) 0%, rgba(18, 57, 45, .25) 22%, rgba(18, 57, 45, .94) 36%, var(--verde) 55%); }
+    .abertura-conteudo { min-height: 0; padding-top: 14rem; }
+  }
+
+  /* faixa de fatos logo abaixo da abertura */
+  .fatos { background: var(--branco); border-bottom: 1px solid var(--linha); }
+  .fatos-grade { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; }
+  .fato { display: grid; gap: .1rem; padding: 1.1rem 1.5rem 1.15rem 0; font-size: .95rem; color: var(--tinta-2); }
+  .fato + .fato { padding-left: 1.5rem; border-left: 1px solid var(--linha); }
+  .fato strong { color: var(--tinta); font-size: 1.02rem; font-weight: 650; }
+  .estrelas { display: inline-flex; gap: 1px; margin-right: .35rem; color: #B7791F; vertical-align: -2px; }
+  .estrelas svg { width: 1rem; height: 1rem; }
+  @media (max-width: 760px) {
+    .fatos-grade { grid-template-columns: minmax(0, 1fr); }
+    .fato { padding: .9rem 0; }
+    .fato + .fato { padding-left: 0; border-left: 0; border-top: 1px solid var(--linha); }
+  }
+
+  /* ---------- secoes ---------- */
+  .secao { padding-block: clamp(3.5rem, 8vw, 6rem); }
+  .secao-branca { background: var(--branco); }
+  .secao-cabeca { display: grid; gap: .8rem; max-width: 44rem; margin-bottom: clamp(2rem, 4vw, 3rem); }
+  .secao-cabeca p { color: var(--tinta-2); font-size: 1.08rem; }
+
+  /* borda de guilhoche entre secoes: uma faixa de linhas entrelacadas, como a margem da apolice */
+  .borda { display: block; width: 100%; height: 34px; background: var(--papel); }
+  .borda path { fill: none; stroke: var(--verde-linha); stroke-width: 1; opacity: .55; }
+  .borda-branca { background: var(--branco); }
+
+  /* ---------- seguros ---------- */
+  .seguros { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr)); gap: 1rem; }
+  .seguro { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: .25rem 1.15rem; align-content: start; padding: 1.5rem 1.5rem 1.4rem; background: var(--branco); border-radius: var(--raio); border: 1px solid var(--linha); }
+  .seguro-desenho { grid-row: span 3; width: 64px; height: 64px; padding: 8px; border-radius: 50%; background: var(--nevoa); }
+  .seguro-desenho path, .seguro-desenho circle, .seguro-desenho rect { fill: none; stroke: var(--verde); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+  .seguro h3 { align-self: end; }
+  .seguro p { color: var(--tinta-2); }
+  .seguro a { justify-self: start; margin-top: .55rem; font-weight: 600; min-height: 44px; display: inline-flex; align-items: center; }
+  /* o ultimo cartao (empresarial) ocupa a linha toda quando sobra sozinho */
+  @media (min-width: 1100px) { .seguros { grid-template-columns: repeat(6, minmax(0, 1fr)); } .seguro { grid-column: span 2; } .seguro:nth-child(4), .seguro:nth-child(5) { grid-column: span 3; } }
+  /* tela bem estreita: desenho em cima do texto */
+  @media (max-width: 400px) { .seguro { grid-template-columns: minmax(0, 1fr); } .seguro-desenho { grid-row: auto; margin-bottom: .4rem; } }
+  .seguros-nota { margin-top: 1.4rem; color: var(--tinta-2); font-size: .95rem; max-width: 46rem; }
+
+  /* ---------- pedido de cotacao ---------- */
+  .cotacao-grade { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); gap: clamp(1.5rem, 4vw, 3.5rem); align-items: stretch; }
+  .cotacao-form { display: grid; gap: 2rem; align-content: start; }
+  .passo { display: grid; gap: .9rem; min-width: 0; margin: 0; padding: 0; border: 0; }
+  .passo legend { display: flex; align-items: center; gap: .7rem; padding: 0; margin-bottom: .9rem; font-family: var(--fonte-titulo); font-size: 1.32rem; font-weight: 650; color: var(--verde); }
+  .passo-num { display: grid; place-items: center; width: 2.1rem; height: 2.1rem; flex: none; border-radius: 50%; border: 1.5px solid var(--verde-linha); font-size: 1.05rem; line-height: 1; }
+  /* tipos: 5 opcoes com o desenho de cada seguro */
+  .tipos { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 6rem), 1fr)); gap: .6rem; }
+  .tipo { position: relative; display: grid; justify-items: center; gap: .35rem; padding: .85rem .5rem .8rem; border-radius: var(--raio); background: var(--papel); box-shadow: inset 0 0 0 1px var(--linha); cursor: pointer; text-align: center; font-weight: 600; font-size: .98rem; transition: background-color .2s, box-shadow .2s; }
+  .tipo:hover { box-shadow: inset 0 0 0 1.5px var(--linha-forte); }
+  .tipo input { position: absolute; inset: 0; opacity: 0; margin: 0; cursor: pointer; }
+  .tipo svg { width: 44px; height: 44px; }
+  .tipo svg path, .tipo svg circle, .tipo svg rect { fill: none; stroke: var(--verde); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+  .tipo:has(input:checked) { background: var(--verde); color: #fff; box-shadow: none; }
+  .tipo:has(input:checked) svg :is(path, circle, rect) { stroke: var(--verde-claro); }
+  .tipo:has(input:focus-visible) { outline: 3px solid var(--verde-linha); outline-offset: 3px; }
+  /* campos */
+  .campos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem 1.1rem; }
+  .campo { display: grid; grid-template-columns: minmax(0, 1fr); gap: .35rem; min-width: 0; font-weight: 600; font-size: .98rem; }
+  .campo-largo { grid-column: 1 / -1; }
+  .campo small { font-weight: 400; color: var(--tinta-2); }
+  .campo input, .campo select {
+    width: 100%; min-width: 0; min-height: 50px; padding: .7rem .9rem; border: 0; border-radius: 10px;
+    background: var(--branco); box-shadow: inset 0 0 0 1.5px var(--linha-forte); color: var(--tinta); font: 400 1.02rem/1.3 var(--fonte);
+  }
+  .campo input:focus { outline: none; box-shadow: inset 0 0 0 2px var(--verde); }
+  .campo-nome { max-width: 26rem; }
+  .opcoes { display: flex; flex-wrap: wrap; gap: .5rem; }
+  .opcoes-titulo { grid-column: 1 / -1; font-weight: 600; font-size: .98rem; margin-bottom: -.4rem; }
+  .opcao { position: relative; display: inline-flex; align-items: center; min-height: 46px; padding: .55rem 1rem; border-radius: 999px; background: var(--papel); box-shadow: inset 0 0 0 1px var(--linha-forte); cursor: pointer; font-size: .98rem; transition: background-color .2s; }
+  .opcao input { position: absolute; inset: 0; opacity: 0; margin: 0; cursor: pointer; }
+  .opcao:has(input:checked) { background: var(--verde); color: #fff; box-shadow: none; }
+  .opcao:has(input:focus-visible) { outline: 3px solid var(--verde-linha); outline-offset: 3px; }
+  .campos .opcoes { grid-column: 1 / -1; }
+  /* painel: verde-tinta da altura do formulario, conteudo fixo ao rolar */
+  .cotacao-painel { position: relative; overflow: hidden; border-radius: var(--raio); background: var(--verde); color: #fff; isolation: isolate; }
+  .painel-fixo { position: sticky; top: 1.25rem; display: grid; gap: 1rem; padding: clamp(1.25rem, 3vw, 1.9rem); }
+  .cotacao-painel h3 { color: #fff; font-size: 1.25rem; }
+  /* roseta no pe do painel: preenche a altura com a estampa da apolice */
+  .painel-guilhoche { position: absolute; z-index: -1; right: -18%; bottom: -22%; width: 115%; aspect-ratio: 1; pointer-events: none; }
+  .painel-guilhoche path { fill: none; stroke: var(--verde-claro); stroke-width: .8; }
+  #campo-vence input { max-width: 20rem; }
+  .previa { position: relative; padding: 1rem 1.1rem 1.2rem; border-radius: 10px 10px 10px 2px; background: #D9FDD3; color: #12241B; font-size: 1rem; line-height: 1.55; white-space: pre-line; overflow-wrap: anywhere; }
+  .btn-zap { background: #fff; color: var(--verde); }
+  .btn-zap:hover { background: var(--nevoa); }
+  .btn-zap svg { color: #179A48; }
+  .painel-ligar { color: #D5E9DF; font-size: .98rem; }
+  .painel-ligar a { color: #fff; font-weight: 600; }
+  @media (max-width: 900px) { .cotacao-grade { grid-template-columns: minmax(0, 1fr); } }
+  @media (max-width: 560px) { .campos { grid-template-columns: minmax(0, 1fr); } }
+  @media (prefers-reduced-motion: reduce) { .tipo, .opcao { transition: none; } }
+
+  /* ---------- quando vence: a apolice com a barra de vigencia ---------- */
+  .vence-grade { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(2rem, 5vw, 4.5rem); align-items: center; }
+  .vence-texto { display: grid; gap: 1rem; }
+  .vence-texto > p { color: var(--tinta-2); font-size: 1.08rem; max-width: 34rem; }
+  .vence-texto > p.vence-nota { font-size: .92rem; }
+  .vence-campos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: .5rem; max-width: 30rem; }
+  .campo select { appearance: none; padding-right: 2.6rem; cursor: pointer;
+    background: var(--branco) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%2312392D' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round' d='M6 9l6 6 6-6'/%3E%3C/svg%3E") no-repeat right .8rem center / 1.1rem; }
+  .campo select:focus { outline: none; box-shadow: inset 0 0 0 2px var(--verde); }
+  .apolice { overflow: hidden; border-radius: var(--raio); background: var(--branco); border: 1px solid var(--linha); box-shadow: 0 24px 50px -36px rgba(18, 57, 45, .55); }
+  .apolice-borda { display: block; width: 100%; height: 30px; background: var(--verde); }
+  .apolice-borda path { fill: none; stroke: var(--verde-claro); stroke-width: 1; opacity: .8; }
+  .apolice-corpo { display: grid; gap: 1.1rem; padding: clamp(1.25rem, 3.5vw, 2.1rem); }
+  .apolice h3 { font-family: var(--fonte); font-size: 1rem; font-weight: 700; color: var(--tinta-2); }
+  .apolice-conta { font-family: var(--fonte-titulo); font-size: clamp(1.8rem, 1.4rem + 1.6vw, 2.6rem); font-weight: 650; line-height: 1.1; color: var(--verde); text-wrap: balance; }
+  .vigencia { display: grid; gap: .5rem; padding-top: 1.6rem; }
+  .vigencia-trilho { position: relative; height: 12px; border-radius: 6px; background: var(--nevoa); }
+  .vigencia-feito { position: absolute; inset: 0 auto 0 0; width: 0; border-radius: 6px; background: var(--verde-linha); transition: width .5s cubic-bezier(.2, .7, .2, 1); }
+  .vigencia-hoje { position: absolute; bottom: calc(100% + 6px); left: 0; transform: translateX(-50%); padding: .1rem .5rem; border-radius: 6px; background: var(--verde); color: #fff; font-size: .8rem; font-weight: 600; white-space: nowrap; opacity: 0; transition: left .5s cubic-bezier(.2, .7, .2, 1), opacity .3s; }
+  .vigencia-hoje.visivel { opacity: 1; }
+  .vigencia-datas { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .25rem 1rem; font-size: .92rem; color: var(--tinta-2); }
+  .vigencia-datas span:last-child { margin-left: auto; text-align: right; font-weight: 600; color: var(--tinta); }
+  .apolice-orientacao { font-size: 1.02rem; }
+  .apolice.urgente .vigencia-feito { background: #B7791F; }
+  .apolice.vencida .vigencia-feito { background: #A33A2B; }
+  .apolice.vencida .apolice-conta { color: #8E2F22; }
+  .apolice-acoes { display: flex; flex-wrap: wrap; gap: .75rem; }
+  @media (max-width: 900px) { .vence-grade { grid-template-columns: minmax(0, 1fr); } }
+  @media (max-width: 480px) { .vence-campos { grid-template-columns: minmax(0, 1fr); } }
+  @media (prefers-reduced-motion: reduce) { .vigencia-feito, .vigencia-hoje { transition: none; } }
+
+  /* ---------- quem somos ---------- */
+  .quem-grade { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: clamp(2rem, 5vw, 4.5rem); align-items: start; }
+  .quem-texto { display: grid; gap: 1.1rem; }
+  .quem-texto p { font-size: 1.1rem; max-width: 38rem; }
+  .socios { display: flex; flex-wrap: wrap; gap: .75rem 2.5rem; padding-top: .4rem; }
+  .socio { display: grid; }
+  .socio strong { font-family: var(--fonte-titulo); font-size: 1.2rem; font-weight: 650; color: var(--verde); }
+  .socio span { color: var(--tinta-2); font-size: .95rem; }
+  .avaliacoes { display: grid; gap: 1rem; }
+  .avaliacao { padding: 1.4rem 1.5rem; background: var(--branco); border-radius: var(--raio); border: 1px solid var(--linha); }
+  .avaliacao p { font-family: var(--fonte-titulo); font-size: 1.28rem; line-height: 1.35; color: var(--verde); font-weight: 550; }
+  .avaliacao footer { margin-top: .6rem; color: var(--tinta-2); font-size: .92rem; }
+  .avaliacoes-link { font-weight: 600; min-height: 44px; display: inline-flex; align-items: center; }
+  .sinistro { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: .3rem 1rem; margin-top: 1rem; padding: 1.3rem 1.4rem; background: var(--nevoa); border-radius: var(--raio); }
+  .sinistro svg { grid-row: span 2; width: 40px; height: 40px; fill: none; stroke: var(--verde); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+  .sinistro h3 { font-size: 1.15rem; }
+  .sinistro p { color: var(--tinta); font-size: 1rem; }
+  @media (max-width: 860px) { .quem-grade { grid-template-columns: minmax(0, 1fr); } }
+
+  /* ---------- onde estamos ---------- */
+  .contato-grade { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(1.5rem, 4vw, 3rem); align-items: stretch; }
+  .contato-dados { display: grid; gap: 1.5rem; align-content: start; }
+  .contato-dados h3 { font-size: 1.05rem; font-family: var(--fonte); font-weight: 700; color: var(--tinta); margin-bottom: .2rem; }
+  .tel-grande { display: inline-flex; align-items: center; min-height: 44px; font-family: var(--fonte-titulo); font-size: clamp(1.6rem, 1.3rem + 1vw, 2rem); font-weight: 700; text-decoration: none; letter-spacing: -.01em; }
+  .tel-grande:hover { text-decoration: underline; }
+  .tel-outro { color: var(--tinta-2); }
+  .tel-outro a { font-weight: 600; }
+  .mapa {
+    scroll-margin-top: 1.5rem;
+    position: relative; display: grid; grid-template-columns: minmax(0, 1fr); place-items: center; width: 100%; height: 100%; min-height: 380px; padding: clamp(.75rem, 4vw, 1.25rem); overflow: hidden; border-radius: var(--raio);
+    background-color: var(--nevoa);
+    background-image:
+      linear-gradient(118deg, transparent 47%, #D3E4DB 47%, #D3E4DB 51%, transparent 51%),
+      repeating-linear-gradient(0deg, transparent 0 54px, #D3E4DB 54px 60px),
+      repeating-linear-gradient(90deg, transparent 0 84px, #D3E4DB 84px 90px);
+  }
+  .mapa-capa { display: grid; justify-items: center; gap: .85rem; max-width: 100%; min-width: 0; padding: clamp(1rem, 4vw, 1.4rem) clamp(.9rem, 4vw, 1.6rem); text-align: center; background: var(--branco); border-radius: var(--raio); box-shadow: 0 14px 34px -20px rgba(18, 57, 45, .5); }
+  .mapa-pino { width: 2.25rem; height: 2.25rem; fill: none; stroke: var(--verde); stroke-width: 1.8; }
+  .mapa-endereco { display: grid; gap: .15rem; }
+  .mapa-endereco strong { font-weight: 650; }
+  .mapa-endereco span { color: var(--tinta-2); }
+  .mapa-quadro { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  @media (max-width: 820px) { .contato-grade { grid-template-columns: minmax(0, 1fr); } .mapa { min-height: 280px; } }
+
+  /* ---------- rodape: verde-tinta, com o selo ---------- */
+  .rodape { background: var(--verde); color: #D5E9DF; padding: 2rem 0 calc(4.5rem + env(safe-area-inset-bottom)); font-size: .92rem; }
+  .rodape-grade { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: .75rem 2.5rem; }
+  .rodape-grade > * { min-width: 0; max-width: 100%; }
+  .rodape .marca { color: #fff; }
+  .rodape .marca-nome span { color: #D5E9DF; }
+  .rodape .marca-selo path, .rodape .marca-selo circle { stroke: var(--verde-claro); }
+  .rodape-dir { display: flex; flex-wrap: wrap; align-items: center; gap: .25rem 1.5rem; }
+  .rodape a { color: #fff; }
+  @media (max-width: 700px) { .rodape-grade { flex-direction: column; align-items: flex-start; } }
+
+  /* ---------- botao flutuante no canto ---------- */
+  .flutuante {
+    display: grid; place-items: center; position: fixed; z-index: 40;
+    right: max(clamp(16px, 2vw, 28px), env(safe-area-inset-right)); bottom: calc(clamp(16px, 2vw, 28px) + env(safe-area-inset-bottom));
+    width: 62px; height: 62px; border-radius: 50%; background: #179A48; color: #fff;
+    box-shadow: 0 10px 28px -10px rgba(23, 154, 72, .7), 0 2px 6px rgba(18, 57, 45, .2);
+    opacity: 0; transform: translateY(12px); pointer-events: none; transition: opacity .25s, transform .25s, background-color .2s;
+  }
+  .flutuante.visivel { opacity: 1; transform: none; pointer-events: auto; }
+  .flutuante:hover { background: #12803B; }
+  .flutuante svg { width: 30px; height: 30px; }
+  @media (max-width: 600px) { .flutuante { width: 56px; height: 56px; } .flutuante svg { width: 27px; height: 27px; } }
+  @media (prefers-reduced-motion: reduce) { .flutuante { transition: none; transform: none; } }
+
+  /* entrada da roseta: o unico movimento da pagina, uma vez ao abrir */
+  @media (prefers-reduced-motion: no-preference) {
+    .guilhoche g { animation: tinta 1.6s ease-out both; }
+    .guilhoche g:nth-of-type(2) { animation-delay: .25s; }
+    .guilhoche g:nth-of-type(3) { animation-delay: .5s; }
+  }
+  @keyframes tinta { from { opacity: 0; transform: rotate(-4deg) scale(.97); } }
+  .guilhoche g { transform-box: view-box; transform-origin: var(--origem, 75% 50%); }
+</style>
+</head>
+<body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="topo">
+  <div class="envoltorio topo-grade">
+    <a class="marca" href="#" translate="no">
+      <svg class="marca-selo" viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="20" fill="none" stroke="#12392D" stroke-width="1.6"/><path class="selo-onda" fill="none" stroke="#3E8466" stroke-width="1" d=""/></svg>
+      <span class="marca-nome"><strong>Cravinhos</strong><span>Corretora de Seguros</span></span>
+    </a>
+    <button class="menu-botao" type="button" id="menu-botao" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+    <nav class="menu" id="menu" aria-label="Principal">
+      <a href="#seguros">Seguros</a>
+      <a href="#cotacao">Cotação</a>
+      <a href="#vencimento">Renovação</a>
+      <a href="#quem">Quem somos</a>
+      <a href="#mapa">Onde estamos</a>
+      <a class="menu-tel" href="tel:+551639517090">(16) 3951-7090</a>
+    </nav>
+  </div>
+</header>
+
+<section class="abertura" aria-labelledby="titulo">
+  <svg class="guilhoche" id="roseta" aria-hidden="true" preserveAspectRatio="xMidYMid slice"></svg>
+  <div class="envoltorio abertura-conteudo">
+    <h1 id="titulo">Corretora de seguros de Cravinhos desde 2003</h1>
+    <p class="abertura-texto">Cotamos e acompanhamos seguros de automóvel, moto, residência, vida e empresa. Somos corretora credenciada MAPFRE, no Centro da cidade.</p>
+    <div class="abertura-acoes">
+      <a class="btn btn-claro" href="#cotacao">Pedir uma cotação</a>
+      <a class="btn btn-vidro" href="tel:+551639517090">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" d="M6.6 3.5h-2a1.2 1.2 0 0 0-1.1 1.3A16.6 16.6 0 0 0 19.2 20.5a1.2 1.2 0 0 0 1.3-1.1v-2a1.2 1.2 0 0 0-.9-1.2l-3-.8a1.2 1.2 0 0 0-1.2.4l-1.2 1.4a13 13 0 0 1-5.4-5.4l1.4-1.2a1.2 1.2 0 0 0 .4-1.2l-.8-3a1.2 1.2 0 0 0-1.2-.9Z"/></svg>
+        Ligar (16) 3951-7090
+      </a>
+    </div>
+  </div>
+</section>
+<div class="fatos">
+  <div class="envoltorio fatos-grade">
+    <p class="fato"><strong><span class="estrelas" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="m12 2.8 2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.3l-5.6 2.9 1.1-6.3-4.6-4.4 6.3-.9Z"/></svg><svg viewBox="0 0 24 24"><path fill="currentColor" d="m12 2.8 2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.3l-5.6 2.9 1.1-6.3-4.6-4.4 6.3-.9Z"/></svg><svg viewBox="0 0 24 24"><path fill="currentColor" d="m12 2.8 2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.3l-5.6 2.9 1.1-6.3-4.6-4.4 6.3-.9Z"/></svg><svg viewBox="0 0 24 24"><path fill="currentColor" d="m12 2.8 2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.3l-5.6 2.9 1.1-6.3-4.6-4.4 6.3-.9Z"/></svg><svg viewBox="0 0 24 24"><path fill="currentColor" d="m12 2.8 2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.3l-5.6 2.9 1.1-6.3-4.6-4.4 6.3-.9Z"/></svg></span>4,7 no Google</strong><a href="https://www.google.com/maps/place/Cravinhos+Corretora+Seguros/@-21.3379921,-47.7300016,17z/data=!4m6!3m5!1s0x94b9ca1e2cab6519:0x5f746d25a9de745d!8m2!3d-21.3379921!4d-47.7300016" target="_blank" rel="noopener">Ler as 18 avaliações</a></p>
+    <p class="fato"><strong>Av. Cel. José Nogueira Terra, 30</strong>Sala 2, Centro de Cravinhos</p>
+    <p class="fato"><strong>Credenciada MAPFRE</strong>Em atividade desde 2003</p>
+  </div>
+</div>
+
+<main id="conteudo">
+  <section class="secao" id="seguros" aria-labelledby="titulo-seguros">
+    <div class="envoltorio">
+      <div class="secao-cabeca">
+        <h2 id="titulo-seguros">Que seguro você procura?</h2>
+        <p>Comparamos as coberturas, explicamos as condições da apólice e acompanhamos o seguro até a renovação.</p>
+      </div>
+      <div class="seguros">
+        <article class="seguro" id="seguro-auto">
+          <svg class="seguro-desenho" viewBox="0 0 48 48" aria-hidden="true"><path d="M7 30v-5.5l3.6-8.2A3 3 0 0 1 13.4 14.5h21.2a3 3 0 0 1 2.8 1.8L41 24.5V30a2 2 0 0 1-2 2h-2.2M11.2 32H9a2 2 0 0 1-2-2"/><path d="M17.2 32h13.6M10.5 24.5h27M13 19.5h22"/><circle cx="14.2" cy="32.5" r="3.4"/><circle cx="33.8" cy="32.5" r="3.4"/></svg>
+          <h3>Automóvel</h3>
+          <p>Colisão, roubo e furto, danos a terceiros e assistência 24 horas, conforme as coberturas escolhidas na apólice.</p>
+          <a href="#cotacao" data-cotar="auto">Cotar seguro de automóvel</a>
+        </article>
+        <article class="seguro" id="seguro-moto">
+          <svg class="seguro-desenho" viewBox="0 0 48 48" aria-hidden="true"><circle cx="13" cy="31" r="6"/><circle cx="35" cy="31" r="6"/><path d="M13 31l7-10h7l4 5.5M35 31l-5.5-13H25M20 21l-2.5-3.5h-4M27 21l3.5 5.5h-6.8l-3.7 4.5"/></svg>
+          <h3>Moto</h3>
+          <p>Proteção contra roubo, furto e danos, com coberturas definidas conforme o uso da moto no dia a dia.</p>
+          <a href="#cotacao" data-cotar="moto">Cotar seguro de moto</a>
+        </article>
+        <article class="seguro" id="seguro-casa">
+          <svg class="seguro-desenho" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 22.5 24 10l16 12.5M12 19.5V38h24V19.5"/><path d="M20.5 38v-9.5h7V38"/><rect x="28.5" y="22" width="4.5" height="4.5"/></svg>
+          <h3>Residencial</h3>
+          <p>Casa ou apartamento, próprio ou alugado: incêndio, danos elétricos, roubo e assistências para a residência.</p>
+          <a href="#cotacao" data-cotar="casa">Cotar seguro residencial</a>
+        </article>
+        <article class="seguro" id="seguro-vida">
+          <svg class="seguro-desenho" viewBox="0 0 48 48" aria-hidden="true"><circle cx="18" cy="16" r="4.2"/><circle cx="31" cy="18.5" r="3.4"/><path d="M10.5 36v-5.5a7.5 7.5 0 0 1 15 0V36M25.5 36v-4.5a5.5 5.5 0 0 1 11 0V36"/><path d="M7 38.5h34"/></svg>
+          <h3>Vida</h3>
+          <p>Proteção financeira para a família, com coberturas para morte e invalidez e opções de assistência.</p>
+          <a href="#cotacao" data-cotar="vida">Cotar seguro de vida</a>
+        </article>
+        <article class="seguro" id="seguro-empresa">
+          <svg class="seguro-desenho" viewBox="0 0 48 48" aria-hidden="true"><path d="M9 20.5V38h30V20.5M7.5 14h33l-1.5 6.5H9z"/><path d="M14 38v-9h8v9M26.5 26h8v6h-8z"/><path d="M7.5 14 10 9.5h28l2.5 4.5"/></svg>
+          <h3>Empresarial</h3>
+          <p>Para comércio, escritório e pequena empresa: imóvel, equipamentos, mercadorias e responsabilidade civil.</p>
+          <a href="#cotacao" data-cotar="empresa">Cotar seguro empresarial</a>
+        </article>
+      </div>
+      <p class="seguros-nota">As coberturas, a franquia e o valor dependem da seguradora e do perfil de cada cliente. Apresentamos as opções antes da contratação.</p>
+    </div>
+  </section>
+
+  <svg class="borda borda-branca" viewBox="0 0 1200 34" preserveAspectRatio="none" aria-hidden="true"></svg>
+  <section class="secao secao-branca" id="cotacao" aria-labelledby="titulo-cotacao">
+    <div class="envoltorio">
+      <div class="secao-cabeca">
+        <h2 id="titulo-cotacao">Pedido de cotação</h2>
+        <p>Informe os dados principais e envie o pedido pelo WhatsApp. Retornamos com as opções de cobertura e valores.</p>
+      </div>
+      <div class="cotacao-grade">
+        <form class="cotacao-form" id="cotacao-form" novalidate>
+          <fieldset class="passo">
+            <legend><span class="passo-num" aria-hidden="true">1</span>Tipo de seguro</legend>
+            <div class="tipos" id="tipos"></div>
+          </fieldset>
+          <fieldset class="passo">
+            <legend><span class="passo-num" aria-hidden="true">2</span><span id="campos-titulo">Dados para a cotação</span></legend>
+            <div class="campos" id="campos"></div>
+          </fieldset>
+          <fieldset class="passo">
+            <legend><span class="passo-num" aria-hidden="true">3</span>Seguro atual</legend>
+            <div class="opcoes" role="radiogroup">
+              <label class="opcao"><input type="radio" name="atual" value="nao" checked><span>Não possuo seguro</span></label>
+              <label class="opcao"><input type="radio" name="atual" value="sim"><span>Já possuo e quero renovar ou comparar</span></label>
+            </div>
+            <label class="campo" id="campo-vence" hidden><span>Data de vencimento da apólice atual <small>(opcional)</small></span><input type="date" id="vence"></label>
+          </fieldset>
+          <label class="campo campo-nome"><span>Seu nome <small>(opcional)</small></span><input type="text" id="nome" autocomplete="name" maxlength="60"></label>
+        </form>
+        <aside class="cotacao-painel" aria-labelledby="titulo-previa">
+          <svg class="painel-guilhoche" id="painel-roseta" viewBox="0 0 600 600" aria-hidden="true"></svg>
+          <div class="painel-fixo">
+            <h3 id="titulo-previa">Mensagem que será enviada</h3>
+            <div class="previa" id="previa" aria-live="polite"></div>
+            <a class="btn btn-zap" id="enviar-cotacao" href="#" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+              Enviar pelo WhatsApp
+            </a>
+            <p class="painel-ligar">Prefere falar por telefone? <a href="tel:+551639517090">(16) 3951-7090</a></p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+  <svg class="borda" viewBox="0 0 1200 34" preserveAspectRatio="none" aria-hidden="true"></svg>
+
+  <section class="secao" id="vencimento" aria-labelledby="titulo-vencimento">
+    <div class="envoltorio vence-grade">
+      <div class="vence-texto">
+        <h2 id="titulo-vencimento">Quando vence o seu seguro?</h2>
+        <p>Informe a data de vencimento da apólice. Mostramos quanto tempo falta e preparamos o pedido de renovação.</p>
+        <div class="vence-campos">
+          <label class="campo"><span>Data de vencimento</span><input type="date" id="vence-data"></label>
+          <label class="campo"><span>Seguro de</span>
+            <select id="vence-tipo">
+              <option value="de automóvel">Automóvel</option>
+              <option value="de moto">Moto</option>
+              <option value="residencial">Residencial</option>
+              <option value="de vida">Vida</option>
+              <option value="empresarial">Empresarial</option>
+            </select>
+          </label>
+        </div>
+        <p class="vence-nota">A data fica salva somente neste aparelho.</p>
+      </div>
+      <div class="apolice" id="apolice">
+        <svg class="apolice-borda" viewBox="0 0 1200 34" preserveAspectRatio="none" aria-hidden="true"></svg>
+        <div class="apolice-corpo">
+          <h3>Vigência da apólice</h3>
+          <p class="apolice-conta" id="vence-conta" aria-live="polite">Informe a data de vencimento</p>
+          <div class="vigencia" aria-hidden="true">
+            <div class="vigencia-trilho"><div class="vigencia-feito" id="vence-barra"></div><span class="vigencia-hoje" id="vence-hoje">Hoje</span></div>
+            <div class="vigencia-datas"><span id="vence-inicio">Início</span><span id="vence-fim">Vencimento</span></div>
+          </div>
+          <p class="apolice-orientacao" id="vence-orientacao">Recomendamos solicitar a cotação de renovação cerca de 30 dias antes do vencimento.</p>
+          <div class="apolice-acoes">
+            <a class="btn" id="vence-zap" href="#" target="_blank" rel="noopener">Pedir cotação de renovação</a>
+            <a class="btn btn-linha" id="vence-agenda" href="#" target="_blank" rel="noopener" hidden>Lembrar na agenda do Google</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <svg class="borda borda-branca" viewBox="0 0 1200 34" preserveAspectRatio="none" aria-hidden="true"></svg>
+  <section class="secao secao-branca" id="quem" aria-labelledby="titulo-quem">
+    <div class="envoltorio quem-grade">
+      <div class="quem-texto">
+        <h2 id="titulo-quem">Quem somos</h2>
+        <p>Somos a Cravinhos Corretora de Seguros, empresa da cidade em atividade desde 2003. Atendemos pessoas, famílias e empresas de Cravinhos e da região, da primeira cotação à renovação da apólice.</p>
+        <p>O atendimento é feito pelos sócios, por telefone ou em nosso escritório no Centro.</p>
+        <div class="socios">
+          <p class="socio"><strong>Luciano Barroso Merchan</strong><span>Sócio-administrador</span></p>
+          <p class="socio"><strong>Juliano Barroso Merchan</strong><span>Sócio-administrador</span></p>
+        </div>
+        <div class="sinistro">
+          <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 4.5 33 9.5v9c0 8.2-5.4 14.5-13 17-7.6-2.5-13-8.8-13-17v-9z"/><path d="M20 13v8.5M20 26v.5"/></svg>
+          <h3>Teve um sinistro?</h3>
+          <p>Fale conosco antes de qualquer conserto. Orientamos sobre o aviso à seguradora e os documentos necessários.</p>
+        </div>
+      </div>
+      <div class="avaliacoes">
+        <blockquote class="avaliacao"><p>“Ótimo atendimento.”</p><footer>Avaliação no Google</footer></blockquote>
+        <blockquote class="avaliacao"><p>“Excelentes profissionais.”</p><footer>Avaliação no Google</footer></blockquote>
+        <a class="avaliacoes-link" href="https://www.google.com/maps/place/Cravinhos+Corretora+Seguros/@-21.3379921,-47.7300016,17z/data=!4m6!3m5!1s0x94b9ca1e2cab6519:0x5f746d25a9de745d!8m2!3d-21.3379921!4d-47.7300016" target="_blank" rel="noopener">Ver todas as avaliações no Google</a>
+      </div>
+    </div>
+  </section>
+  <svg class="borda" id="borda-2" viewBox="0 0 1200 34" preserveAspectRatio="none" aria-hidden="true"></svg>
+
+  <section class="secao" id="contato" aria-labelledby="titulo-contato">
+    <div class="envoltorio contato-grade">
+      <div class="contato-dados">
+        <h2 id="titulo-contato">Onde estamos</h2>
+        <div><h3>Telefone</h3><a class="tel-grande" href="tel:+551639517090">(16) 3951-7090</a><p class="tel-outro">Também atendemos no <a href="tel:+551639512266">(16) 3951-2266</a></p></div>
+        <div><h3>Endereço</h3><p>Av. Cel. José Nogueira Terra, 30, sala 2<br>Centro, Cravinhos (SP), 14140-000</p></div>
+        <div><h3>E-mail</h3><p><a href="mailto:cravinhos.seguros@metalnet.com.br">cravinhos.seguros@metalnet.com.br</a></p></div>
+      </div>
+      <div class="mapa" id="mapa">
+        <div class="mapa-capa">
+          <svg class="mapa-pino" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11Z"/><circle cx="12" cy="10" r="2.4"/></svg>
+          <p class="mapa-endereco"><strong>Av. Cel. José Nogueira Terra, 30, sala 2</strong><span>Centro, Cravinhos</span></p>
+          <button class="btn" type="button" id="mostrar-mapa">Mostrar o mapa</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <div class="envoltorio rodape-grade">
+    <a class="marca" href="#" translate="no">
+      <svg class="marca-selo" viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="20" fill="none" stroke="#A9D8C1" stroke-width="1.6"/><path class="selo-onda" fill="none" stroke="#A9D8C1" stroke-width="1" d=""/></svg>
+      <span class="marca-nome"><strong>Cravinhos</strong><span>Corretora de Seguros</span></span>
+    </a>
+    <div class="rodape-dir">
+      <p>CNPJ 05.803.379/0001-91</p>
+      <p>© 2026 Cravinhos Corretora de Seguros Ltda</p>
+    </div>
+  </div>
+</footer>
+
+<a class="flutuante" id="flutuante" href="tel:+551639517090" aria-label="Ligar para a corretora" title="Ligar para a corretora" tabindex="-1">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 3.5h-2a1.2 1.2 0 0 0-1.1 1.3A16.6 16.6 0 0 0 19.2 20.5a1.2 1.2 0 0 0 1.3-1.1v-2a1.2 1.2 0 0 0-.9-1.2l-3-.8a1.2 1.2 0 0 0-1.2.4l-1.2 1.4a13 13 0 0 1-5.4-5.4l1.4-1.2a1.2 1.2 0 0 0 .4-1.2l-.8-3a1.2 1.2 0 0 0-1.2-.9Z"/></svg>
+</a>
+
+<script>
+/* ============================================================
+   DADOS - o que a corretora muda fica aqui em cima
+   ============================================================ */
+/* WhatsApp: AINDA NAO CONFIRMADO. Vazio = os botoes abrem o WhatsApp
+   com a mensagem pronta e a pessoa escolhe o contato; o botao do canto liga.
+   Quando confirmar, por so numeros com 55 e DDD, ex.: "5516999999999". */
+const WHATSAPP = "";
+const TELEFONE = "+551639517090";
+
+const $ = (s) => document.querySelector(s);
+const NS = "http://www.w3.org/2000/svg";
+
+/* ---------- guilhoche: linhas senoidais entrelacadas, desenhadas por conta ---------- */
+/* anel ondulado: raio R, amplitude a, k ondas na volta, deslocado pela fase */
+function anel(cx, cy, R, a, k, fase, passos) {
+  let d = "";
+  for (let j = 0; j <= passos; j++) {
+    const t = (j / passos) * Math.PI * 2, r = R + a * Math.sin(k * t + fase);
+    d += (j ? "L" : "M") + (cx + r * Math.cos(t)).toFixed(1) + " " + (cy + r * Math.sin(t)).toFixed(1);
+  }
+  return d + "Z";
+}
+function grupo(svg, caminhos, opacidade) {
+  const g = document.createElementNS(NS, "g");
+  g.style.opacity = opacidade;
+  g.innerHTML = caminhos.map((d) => `<path d="${d}"/>`).join("");
+  svg.appendChild(g);
+}
+function faixa(n, fn) { return Array.from({ length: n }, (_, i) => fn((i / n) * Math.PI * 2)); }
+
+function desenharRoseta() {
+  const svg = $("#roseta");
+  const celular = matchMedia("(max-width: 760px)").matches;
+  const W = celular ? 600 : 1600, H = celular ? 900 : 900;
+  const cx = celular ? 300 : 1180, cy = celular ? 120 : 450;
+  const k = celular ? .58 : 1;   /* no celular a roseta fica menor e acima do titulo */
+  svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
+  svg.style.setProperty("--origem", `${cx}px ${cy}px`);
+  svg.innerHTML = "";
+  grupo(svg, faixa(18, (f) => anel(cx, cy, 395 * k, 26 * k, 30, f, 900)), .5);
+  grupo(svg, faixa(14, (f) => anel(cx, cy, 285 * k, 20 * k, 22, f, 700)), .62);
+  /* miolo: petalas entrelacadas (amplitude grande) + um anel fino em volta */
+  grupo(svg, faixa(7, (f) => anel(cx, cy, 112 * k, 66 * k, 7, f, 900)).concat(faixa(10, (f) => anel(cx, cy, 200 * k, 10 * k, 18, f, 600))), .75);
+}
+
+/* borda entre secoes: ondas horizontais deslocadas */
+function desenharBorda(svg) {
+  let html = "";
+  for (let i = 0; i < 6; i++) {
+    const f = (i / 6) * Math.PI * 2;
+    let d = "";
+    for (let x = 0; x <= 1200; x += 4) d += (x ? "L" : "M") + x + " " + (17 + 9 * Math.sin(x / 1200 * Math.PI * 2 * 40 + f)).toFixed(1);
+    html += `<path vector-effect="non-scaling-stroke" d="${d}"/>`;
+  }
+  svg.innerHTML = html;
+}
+
+/* selo do nome: um anel ondulado pequeno dentro do circulo */
+document.querySelectorAll(".selo-onda").forEach((p) => {
+  p.setAttribute("d", faixa(5, (f) => anel(22, 22, 12.5, 2.4, 9, f, 180)).join(""));
+});
+
+desenharRoseta();
+(() => {
+  const svg = $("#painel-roseta");
+  grupo(svg, faixa(14, (f) => anel(300, 300, 250, 18, 26, f, 800)), .28);
+  grupo(svg, faixa(7, (f) => anel(300, 300, 95, 60, 7, f, 700)).concat(faixa(10, (f) => anel(300, 300, 170, 10, 16, f, 600))), .32);
+})();
+document.querySelectorAll(".borda, .apolice-borda").forEach(desenharBorda);
+matchMedia("(max-width: 760px)").addEventListener("change", desenharRoseta);
+
+/* ---------- WhatsApp ---------- */
+function zap(texto) {
+  return (WHATSAPP ? `https://wa.me/${WHATSAPP}` : "https://wa.me/") + "?text=" + encodeURIComponent(texto);
+}
+
+/* ---------- pedido de cotacao ---------- */
+/* cada tipo de seguro: nome na mensagem e os campos que ele pede.
+   tipo "texto" = campo livre; "opcoes" = escolha uma; "marcar" = varias */
+const TIPOS = {
+  auto: { nome: "automóvel", rotulo: "Automóvel", campos: [
+    { id: "veiculo", rotulo: "Modelo e ano do veículo", tipo: "texto", dica: "Ex.: Onix 1.0 2021" },
+    { id: "cep", rotulo: "CEP onde o veículo fica à noite", tipo: "texto", modo: "numeric", dica: "14140-000" },
+    { id: "uso", rotulo: "Uso do veículo", tipo: "opcoes", opcoes: ["Particular", "Trabalho", "Aplicativo de transporte"] },
+  ] },
+  moto: { nome: "moto", rotulo: "Moto", campos: [
+    { id: "veiculo", rotulo: "Modelo e ano da moto", tipo: "texto", dica: "Ex.: CG 160 2022" },
+    { id: "cep", rotulo: "CEP onde a moto fica à noite", tipo: "texto", modo: "numeric", dica: "14140-000" },
+    { id: "uso", rotulo: "Uso da moto", tipo: "opcoes", opcoes: ["Particular", "Trabalho", "Entregas"] },
+  ] },
+  casa: { nome: "residencial", rotulo: "Residencial", campos: [
+    { id: "imovel", rotulo: "Tipo de imóvel", tipo: "opcoes", opcoes: ["Casa", "Apartamento"] },
+    { id: "situacao", rotulo: "Situação", tipo: "opcoes", opcoes: ["Próprio", "Alugado"] },
+    { id: "bairro", rotulo: "Bairro e cidade", tipo: "texto", dica: "Ex.: Centro, Cravinhos" },
+  ] },
+  vida: { nome: "vida", rotulo: "Vida", campos: [
+    { id: "idade", rotulo: "Idade", tipo: "texto", modo: "numeric", dica: "Ex.: 42" },
+    { id: "profissao", rotulo: "Profissão", tipo: "texto", dica: "Ex.: Professora" },
+    { id: "para", rotulo: "Seguro para", tipo: "opcoes", opcoes: ["Somente eu", "Eu e meu cônjuge"] },
+  ] },
+  empresa: { nome: "empresarial", rotulo: "Empresarial", campos: [
+    { id: "ramo", rotulo: "Ramo de atividade", tipo: "texto", dica: "Ex.: Comércio de roupas" },
+    { id: "cidade", rotulo: "Cidade do estabelecimento", tipo: "texto", dica: "Ex.: Cravinhos" },
+    { id: "proteger", rotulo: "O que deseja proteger", tipo: "marcar", opcoes: ["Imóvel", "Equipamentos", "Mercadorias", "Responsabilidade civil"] },
+  ] },
+};
+const tiposEl = $("#tipos"), camposEl = $("#campos"), formCotacao = $("#cotacao-form");
+const DESENHOS = { auto: "#seguro-auto", moto: "#seguro-moto", casa: "#seguro-casa", vida: "#seguro-vida", empresa: "#seguro-empresa" };
+let tipoAtual = "auto";
+
+tiposEl.innerHTML = Object.entries(TIPOS).map(([id, t]) =>
+  `<label class="tipo">${$(DESENHOS[id] + " .seguro-desenho").outerHTML.replace('class="seguro-desenho"', "")}<input type="radio" name="tipo" value="${id}"${id === tipoAtual ? " checked" : ""}>${t.rotulo}</label>`
+).join("");
+
+function montarCampos() {
+  const t = TIPOS[tipoAtual];
+  $("#campos-titulo").textContent = "Dados do seguro " + (tipoAtual === "auto" ? "de automóvel" : tipoAtual === "moto" ? "de moto" : tipoAtual === "vida" ? "de vida" : t.nome);
+  camposEl.innerHTML = t.campos.map((c) => {
+    if (c.tipo === "texto") {
+      return `<label class="campo"><span>${c.rotulo}</span><input type="text" data-campo="${c.id}" placeholder="${c.dica}"${c.modo ? ` inputmode="${c.modo}"` : ""} maxlength="60"></label>`;
+    }
+    const tipoInput = c.tipo === "marcar" ? "checkbox" : "radio";
+    return `<p class="opcoes-titulo" id="rot-${c.id}">${c.rotulo}</p><div class="opcoes" role="${c.tipo === "marcar" ? "group" : "radiogroup"}" aria-labelledby="rot-${c.id}">` +
+      c.opcoes.map((o) => `<label class="opcao"><input type="${tipoInput}" name="c-${c.id}" value="${o}" data-campo="${c.id}"><span>${o}</span></label>`).join("") + `</div>`;
+  }).join("");
+  cotacaoMensagem();
+}
+
+function dataBR(iso) { const [a, m, d] = iso.split("-"); return `${d}/${m}/${a}`; }
+
+function cotacaoMensagem() {
+  const t = TIPOS[tipoAtual];
+  const linhas = [`Olá! Gostaria de uma cotação de seguro ${tipoAtual === "auto" ? "de automóvel" : tipoAtual === "moto" ? "de moto" : tipoAtual === "vida" ? "de vida" : t.nome}.`];
+  t.campos.forEach((c) => {
+    let valor;
+    if (c.tipo === "texto") valor = camposEl.querySelector(`[data-campo="${c.id}"]`).value.trim();
+    else valor = [...camposEl.querySelectorAll(`[data-campo="${c.id}"]:checked`)].map((i) => i.value).join(", ");
+    if (valor) linhas.push(`${c.rotulo}: ${valor}`);
+  });
+  const atual = formCotacao.querySelector('[name="atual"]:checked').value;
+  const vence = $("#vence").value;
+  $("#campo-vence").hidden = atual !== "sim";
+  if (atual === "sim") linhas.push(vence ? `Já possuo seguro, com vencimento em ${dataBR(vence)}.` : "Já possuo seguro e gostaria de comparar as condições.");
+  const nome = $("#nome").value.trim();
+  if (nome) linhas.push(`Meu nome é ${nome}.`);
+  const texto = linhas.join("\n");
+  $("#previa").textContent = texto;
+  $("#enviar-cotacao").href = zap(texto);
+}
+
+function escolherTipo(id) {
+  tipoAtual = id;
+  tiposEl.querySelector(`input[value="${id}"]`).checked = true;
+  montarCampos();
+}
+formCotacao.addEventListener("change", (e) => {
+  if (e.target.name === "tipo") escolherTipo(e.target.value);
+  else cotacaoMensagem();
+});
+formCotacao.addEventListener("input", (e) => { if (e.target.type === "text" || e.target.type === "date") cotacaoMensagem(); });
+formCotacao.addEventListener("submit", (e) => e.preventDefault());
+/* "Cotar seguro de X" nos cartoes: ja marca o tipo */
+document.querySelectorAll("[data-cotar]").forEach((a) => a.addEventListener("click", () => escolherTipo(a.dataset.cotar)));
+montarCampos();
+
+/* ---------- quando vence o seu seguro ---------- */
+const DIA = 86400000;
+const venceData = $("#vence-data"), venceTipo = $("#vence-tipo"), apolice = $("#apolice");
+function hojeMeiaNoite() { const h = new Date(); return new Date(h.getFullYear(), h.getMonth(), h.getDate()); }
+function lerData(iso) { const [a, m, d] = iso.split("-").map(Number); return new Date(a, m - 1, d); }
+function br(d) { return d.toLocaleDateString("pt-BR", { day: "2-digit", month: "2-digit", year: "numeric" }); }
+function iso8(d) { return d.getFullYear() + String(d.getMonth() + 1).padStart(2, "0") + String(d.getDate()).padStart(2, "0"); }
+function guardar(chave, valor) { try { valor ? localStorage.setItem(chave, valor) : localStorage.removeItem(chave); } catch (e) {} }
+function ler(chave) { try { return localStorage.getItem(chave) || ""; } catch (e) { return ""; } }
+
+function montarVencimento() {
+  const tipo = venceTipo.value, iso = venceData.value;
+  guardar("cc-vence", iso); guardar("cc-vence-tipo", tipo);
+  const zapVence = $("#vence-zap"), agenda = $("#vence-agenda"), hojeEl = $("#vence-hoje"), conta = $("#vence-conta"), orienta = $("#vence-orientacao");
+  apolice.classList.remove("urgente", "vencida");
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(iso)) {
+    conta.textContent = "Informe a data de vencimento";
+    $("#vence-barra").style.width = "0";
+    hojeEl.classList.remove("visivel");
+    $("#vence-inicio").textContent = "Início"; $("#vence-fim").textContent = "Vencimento";
+    orienta.textContent = "Recomendamos solicitar a cotação de renovação cerca de 30 dias antes do vencimento.";
+    zapVence.href = zap(`Olá! Gostaria de uma cotação de renovação do meu seguro ${tipo}.`);
+    agenda.hidden = true;
+    return;
+  }
+  const fim = lerData(iso), inicio = new Date(fim.getFullYear() - 1, fim.getMonth(), fim.getDate()), hoje = hojeMeiaNoite();
+  const faltam = Math.round((fim - hoje) / DIA);
+  const pedir = new Date(fim.getFullYear(), fim.getMonth(), fim.getDate() - 30);
+  const parte = Math.min(1, Math.max(0, (hoje - inicio) / (fim - inicio)));
+  $("#vence-barra").style.width = (parte * 100) + "%";
+  hojeEl.style.left = `clamp(1.6rem, ${parte * 100}%, calc(100% - 1.6rem))`;
+  hojeEl.classList.toggle("visivel", faltam >= 0 && faltam <= 366);
+  $("#vence-inicio").textContent = "Início " + br(inicio);
+  $("#vence-fim").textContent = "Vence " + br(fim);
+
+  if (faltam < 0) {
+    apolice.classList.add("vencida");
+    conta.textContent = `Venceu há ${-faltam} ${faltam === -1 ? "dia" : "dias"}`;
+    orienta.textContent = "Se a apólice não foi renovada, o bem pode estar sem cobertura. Fale conosco para verificar a renovação.";
+  } else if (faltam === 0) {
+    apolice.classList.add("urgente");
+    conta.textContent = "Vence hoje";
+    orienta.textContent = "Fale conosco ainda hoje para verificar a renovação.";
+  } else if (faltam <= 30) {
+    apolice.classList.add("urgente");
+    conta.textContent = `Faltam ${faltam} ${faltam === 1 ? "dia" : "dias"}`;
+    orienta.textContent = "Este é o momento de solicitar a cotação de renovação.";
+  } else {
+    conta.textContent = `Faltam ${faltam} dias`;
+    orienta.textContent = faltam > 400
+      ? "Confira a data: a vigência da apólice costuma ser de 12 meses."
+      : `Recomendamos solicitar a cotação de renovação a partir de ${br(pedir)}, cerca de 30 dias antes do vencimento.`;
+  }
+  zapVence.href = zap(`Olá! Meu seguro ${tipo} vence em ${br(fim)}. Gostaria de uma cotação de renovação.`);
+
+  /* lembrete na agenda: no dia de pedir a renovacao (ou amanha, se ja e hora) */
+  const dia = faltam > 30 ? pedir : new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate() + 1);
+  const diaSeguinte = new Date(dia.getFullYear(), dia.getMonth(), dia.getDate() + 1);
+  agenda.hidden = faltam < 1;
+  agenda.href = "https://calendar.google.com/calendar/render?action=TEMPLATE"
+    + "&text=" + encodeURIComponent(`Renovar seguro ${tipo}`)
+    + "&dates=" + iso8(dia) + "/" + iso8(diaSeguinte)
+    + "&details=" + encodeURIComponent(`A apólice vence em ${br(fim)}. Solicitar a cotação de renovação à Cravinhos Corretora de Seguros: (16) 3951-7090.`);
+}
+venceData.value = ler("cc-vence");
+if (ler("cc-vence-tipo")) venceTipo.value = ler("cc-vence-tipo");
+venceData.addEventListener("input", montarVencimento);
+venceData.addEventListener("change", montarVencimento);
+venceTipo.addEventListener("change", montarVencimento);
+montarVencimento();
+
+/* ---------- botao do canto: aparece depois da abertura e sai no rodape ---------- */
+const flutuante = $("#flutuante");
+if (WHATSAPP) {
+  flutuante.href = zap("Olá! Vim pelo site da Cravinhos Corretora e gostaria de atendimento.");
+  flutuante.target = "_blank"; flutuante.rel = "noopener";
+  flutuante.setAttribute("aria-label", "Conversar no WhatsApp");
+}
+function mostrarFlutuante() {
+  const passou = $(".abertura").getBoundingClientRect().bottom < 0 && $(".rodape").getBoundingClientRect().top > innerHeight;
+  flutuante.classList.toggle("visivel", passou);
+  flutuante.tabIndex = passou ? 0 : -1;
+}
+addEventListener("scroll", mostrarFlutuante, { passive: true });
+
+/* ---------- mapa do Google so no clique ---------- */
+$("#mostrar-mapa").addEventListener("click", () => {
+  const f = document.createElement("iframe");
+  f.className = "mapa-quadro";
+  f.title = "Mapa: Cravinhos Corretora de Seguros, Av. Cel. José Nogueira Terra, 30";
+  f.src = "https://www.google.com/maps?q=-21.3379921,-47.7300016&z=17&output=embed";
+  f.loading = "lazy";
+  $("#mapa").replaceChildren(f);
+});
+
+/* ---------- menu do celular ---------- */
+const topo = $(".topo"), menuBotao = $("#menu-botao");
+function menu(abrir) {
+  topo.classList.toggle("menu-aberto", abrir);
+  menuBotao.setAttribute("aria-expanded", String(abrir));
+  menuBotao.setAttribute("aria-label", abrir ? "Fechar menu" : "Abrir menu");
+}
+menuBotao.addEventListener("click", () => menu(!topo.classList.contains("menu-aberto")));
+$("#menu").addEventListener("click", (e) => { if (e.target.closest("a")) menu(false); });
+document.addEventListener("click", (e) => { if (!topo.contains(e.target)) menu(false); });
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && topo.classList.contains("menu-aberto")) { menu(false); menuBotao.focus(); }
+});
+matchMedia("(min-width: 961px)").addEventListener("change", (m) => { if (m.matches) menu(false); });
+
+mostrarFlutuante();
+</script>
+</body>
+</html>
